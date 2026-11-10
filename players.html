@@ -1,39 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <title>Real Madrid | Hall of Legends</title>
 
-    <title>Real Madrid | Players</title>
-
+    <link rel="icon" type="image/png" href="images/real-madrid-crest.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
-          rel="stylesheet">
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-          rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="players.css">
-
 </head>
-
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark madrid-navbar fixed-top">
-
+    <nav class="navbar navbar-expand-lg navbar-dark players-navbar">
         <div class="container">
 
-            <a class="navbar-brand madrid-brand"
-               href="index.html">
+            <a class="navbar-brand" href="index.html">
                 <span class="brand-crown">♛</span>
                 REAL MADRID
             </a>
@@ -41,8 +29,8 @@
             <button class="navbar-toggler"
                     type="button"
                     data-bs-toggle="collapse"
-                    data-bs-target="#mainNavigation"
-                    aria-controls="mainNavigation"
+                    data-bs-target="#playersNav"
+                    aria-controls="playersNav"
                     aria-expanded="false"
                     aria-label="Toggle navigation">
 
@@ -50,226 +38,269 @@
 
             </button>
 
-            <div class="collapse navbar-collapse"
-                 id="mainNavigation">
+            <div class="collapse navbar-collapse" id="playersNav">
 
                 <ul class="navbar-nav ms-auto">
 
                     <li class="nav-item">
-
-                        <a class="nav-link"
-                           href="index.html">
-                            Home
-                        </a>
-
+                        <a class="nav-link" href="index.html">Home</a>
                     </li>
 
                     <li class="nav-item">
-
-                        <a class="nav-link"
-                           href="index.html#history">
-                            History
-                        </a>
-
+                        <a class="nav-link" href="index.html#history">History</a>
                     </li>
 
                     <li class="nav-item">
-
-                        <a class="nav-link"
-                           href="index.html#moments">
-                            Moments
-                        </a>
-
+                        <a class="nav-link" href="index.html#moments">Moments</a>
                     </li>
 
                     <li class="nav-item">
-
-                        <a class="nav-link active"
-                           href="players.html">
-                            Players
-                        </a>
-
+                        <a class="nav-link active" href="players.html">Players</a>
                     </li>
 
                     <li class="nav-item">
-
-                        <a class="nav-link"
-                           href="index.html#contact">
-                            Contact
-                        </a>
-
+                        <a class="nav-link" href="index.html#contact">Contact</a>
                     </li>
 
                 </ul>
 
             </div>
         </div>
-
     </nav>
-
-    <header class="players-hero">
-
-        <div class="container">
-            <div class="players-hero-layout">
-                <div class="players-hero-content">
-
-                    <p class="section-label">
-                        THE SQUAD
-                    </p>
-
-                    <h1>
-
-                        REAL MADRID
-
-                        <span>
-                            PLAYERS
-                        </span>
-
-                    </h1>
-
-                    <p>
-
-                        Meet the players representing the famous
-                        white shirt during the 2026/27 season.
-
-                    </p>
-
-                </div>
-
-                <div class="players-hero-crest">
-
-                    <img src="real-madrid.png"
-                         alt="Real Madrid Crest"
-                         class="players-crest">
-
-                </div>
-            </div>
-        </div>
-
-    </header>
 
     <main>
 
-        <section class="players-section">
+        <header class="players-hero">
+
+            <div class="players-hero-overlay"></div>
+            <div class="container players-hero-content">
+
+                <p class="hero-eyebrow">THE MEN BEHIND THE LEGACY</p>
+
+                <h1>
+                    HALL OF
+                    <span>LEGENDS</span>
+                </h1>
+
+                <p>
+                    Discover the players who built the history of
+                    the greatest football institution.
+                </p>
+
+                <a href="#current-squad" class="players-hero-btn">
+                    EXPLORE THE SQUAD
+                </a>
+
+            </div>
+
+            <div class="hero-scroll">
+                SCROLL TO DISCOVER
+                <span>↓</span>
+            </div>
+
+        </header>
+
+        <section id="current-squad" class="current-squad-section">
 
             <div class="container">
-                <div id="players-container"></div>
-                <div class="squad-table-section">
-                    <div class="section-heading text-center">
+                <div class="players-section-heading">
+                    <div class="section-number">01</div>
 
-                        <p class="section-label">
-                            SQUAD OVERVIEW
+                    <div>
+                        <p class="section-eyebrow">THE PRESENT GENERATION</p>
+                        <h2>CURRENT <span>SQUAD</span></h2>
+                        <p class="section-description">
+                            Meet the players representing Real Madrid
+                            in the 2026/27 season.
                         </p>
-
-                        <h2>
-
-                            FIRST TEAM
-
-                            <span>
-                                ROSTER
-                            </span>
-
-                        </h2>
-
-                    </div>
-
-                    <div class="table-responsive">
-
-                        <table class="table madrid-table">
-
-                            <thead>
-
-                                <tr>
-
-                                    <th>
-                                        #
-                                    </th>
-
-                                    <th>
-                                        Player
-                                    </th>
-
-                                    <th>
-                                        Position
-                                    </th>
-
-                                    <th>
-                                        Club
-                                    </th>
-
-                                    <th>
-                                        Season
-                                    </th>
-
-                                </tr>
-
-                            </thead>
-
-                            <tbody id="players-table">
-
-                            </tbody>
-
-                        </table>
                     </div>
                 </div>
+
+                <div class="squad-toolbar">
+                    <div class="search-box">
+
+                        <span>⌕</span>
+
+                        <input type="search"
+                               id="playerSearch"
+                               placeholder="Search player..."
+                               aria-label="Search players">
+                    </div>
+
+                    <div class="filter-buttons" id="positionFilters">
+
+                        <button class="filter-btn active" data-position="All">
+                            All
+                        </button>
+
+                        <button class="filter-btn" data-position="Goalkeeper">
+                            Goalkeepers
+                        </button>
+
+                        <button class="filter-btn" data-position="Defender">
+                            Defenders
+                        </button>
+
+                        <button class="filter-btn" data-position="Midfielder">
+                            Midfielders
+                        </button>
+
+                        <button class="filter-btn" data-position="Forward">
+                            Forwards
+                        </button>
+
+                    </div>
+
+                    <div class="sort-box">
+
+                        <label for="playerSort">Sort by:</label>
+
+                        <select id="playerSort">
+                            <option value="number">Shirt number</option>
+                            <option value="name">Name</option>
+                            <option value="position">Position</option>
+                        </select>
+
+                    </div>
+                </div>
+
+                <div class="squad-counter">
+                    <span id="playersCount">26</span> PLAYERS
+                    <span class="counter-line"></span>
+                    SEASON 2026/27
+                </div>
+
+                <div id="playersGrid" class="players-grid">
+
+                </div>
+
+                <p id="noPlayersMessage" class="no-results" hidden>
+                    No players found. Try another search.
+                </p>
+
+                <p class="flip-hint">
+                    HOVER OVER A PLAYER CARD TO DISCOVER HIS STATISTICS
+                </p>
+
+            </div>
+
+        </section>
+
+        <section class="hall-of-fame-section" id="hall-of-fame">
+
+            <div class="container">
+                <div class="players-section-heading">
+                    <div class="section-number">02</div>
+
+                    <div>
+                        <p class="section-eyebrow">ETERNALLY IN OUR HISTORY</p>
+
+                        <h2>HALL OF <span>FAME</span></h2>
+
+                        <p class="section-description">
+                            The legends who transformed Real Madrid
+                            into a symbol of football greatness.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="hall-intro">
+                    <div class="hall-intro-number">1902</div>
+                    <div class="hall-intro-text">
+                        <p>
+                            MORE THAN A CENTURY OF GREATNESS
+                        </p>
+
+                        <h3>
+                            LEGENDS NEVER
+                            <span>FADE AWAY</span>
+                        </h3>
+                    </div>
+
+                    <div class="hall-intro-number">2026</div>
+
+                </div>
+
+                <div class="legend-filters">
+
+                    <button class="legend-filter active" data-era="All">
+                        ALL ERAS
+                    </button>
+
+                    <button class="legend-filter" data-era="1950s">
+                        1950s–60s
+                    </button>
+
+                    <button class="legend-filter" data-era="1980s">
+                        1980s–90s
+                    </button>
+
+                    <button class="legend-filter" data-era="2000s">
+                        2000s
+                    </button>
+
+                    <button class="legend-filter" data-era="2010s">
+                        2010s
+                    </button>
+
+                </div>
+
+                <div id="legendsGrid" class="legends-grid">
+
+                </div>
+
             </div>
 
         </section>
 
     </main>
 
-    <footer class="madrid-footer">
+    <div class="legend-modal" id="legendModal" aria-hidden="true">
+
+        <div class="legend-modal-overlay" data-close-modal></div>
+
+        <div class="legend-modal-content" role="dialog" aria-modal="true" aria-labelledby="modalName">
+
+            <button class="modal-close" data-close-modal aria-label="Close">
+                &times;
+            </button>
+
+            <div id="modalBody"></div>
+
+        </div>
+
+    </div>
+
+    <footer class="players-footer">
 
         <div class="container">
-            <div class="footer-content"></div>
+
+            <div class="footer-main">
+
                 <div>
-
-                    <h3>
-                        REAL MADRID
-                    </h3>
-
-                    <p>
-                        Hala Madrid y nada más.
-                    </p>
-
+                    <h3>REAL MADRID</h3>
+                    <p>Hala Madrid y nada más.</p>
                 </div>
 
-                <div class="footer-links">
-
-                    <a href="index.html">
-                        Home
-                    </a>
-
-                    <a href="index.html#history">
-                        History
-                    </a>
-
-                    <a href="index.html#moments">
-                        Moments
-                    </a>
-
-                    <a href="players.html">
-                        Players
-                    </a>
-
+                <div class="footer-navigation">
+                    <a href="index.html">Home</a>
+                    <a href="index.html#history">History</a>
+                    <a href="players.html">Players</a>
                 </div>
+
             </div>
 
             <div class="footer-bottom">
-
-                <p>
-                    © 2026 Madridista Fan Website
-                </p>
-
+                © 2026 Madridista Fan Website
             </div>
+
         </div>
 
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="players.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
-    </script>
 
 </body>
 </html>
